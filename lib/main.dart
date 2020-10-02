@@ -20,57 +20,70 @@ class MyApp extends StatelessWidget {
 	                decoration: BoxDecoration(		                
 		                color: Colors.yellow,
                 	),
-	                margin: EdgeInsets.all(10.0),
-	                padding: EdgeInsets.all(10.0)             
+	                alignment: Alignment.centerLeft,
+                  height: 100,
+                  width: 100,
+                  margin: EdgeInsets.only(left: 20.0, right: 20.0), 
+                       
                 ),
                   Container(
 	                child: Text('Container 2'),
 	                decoration: BoxDecoration(		                
 		                color: Colors.white,
                 	),
-	                margin: EdgeInsets.all(10.0),
-	                padding: EdgeInsets.all(10.0),
-                  transform: Matrix4.rotationZ(0.05),            
+	                alignment: Alignment.centerLeft,
+                  height: 100,
+                  width: 100,
+                  //transform: Matrix4.rotationZ(0.75),
+                  margin: EdgeInsets.only(left: 20.0, right: 20.0),            
                 ),             
                ],
               ),
              Column(
                children: [
                  Container(
-	                child: Text('Container 1'),
+	                child: Text('Container 3'),
 	                decoration: BoxDecoration(		                
-		                color: Colors.yellowAccent,
+		                color: Colors.yellow,
                 	),
-	                margin: EdgeInsets.all(10.0),
-	                padding: EdgeInsets.all(10.0)             
+	                alignment: Alignment.center,
+                  height: 100,
+                  width: 100,
+                  margin: EdgeInsets.only(top: 230.0), 
+                               
                 ),
                   Container(
-	                child: Text('Container 2'),
+	                child: Text('Container 4'),
 	                decoration: BoxDecoration(		                
-		                color: Colors.white,
+		                color: Colors.blue,
                 	),
-	                margin: EdgeInsets.all(10.0),
-	                padding: EdgeInsets.all(10.0),                          
+	                alignment: Alignment.center, 
+                  height: 100,
+                  width: 100,                                          
                 ),
                 
                ],),
              Column(
                children: [
                  Container(
-	                child: Text('Container 1'),
+	                child: Text('Container 5'),
 	                decoration: BoxDecoration(		                
-		                color: Colors.yellow,
+		                color: Colors.black,
+                    shape: BoxShape.circle,
                 	),
-	                margin: EdgeInsets.all(10.0),
-	                padding: EdgeInsets.all(10.0)             
+	                alignment: Alignment.centerRight, 
+                  height: 100,
+                  width: 100             
                 ),
                   Container(
-	                child: Text('Container 2'),
+	                child: Text('Container 6'),
 	                decoration: BoxDecoration(		                
-		                color: Colors.white,
+		                color: Colors.redAccent,
                 	),
-	                margin: EdgeInsets.all(10.0),
-	                padding: EdgeInsets.all(10.0),                              
+	                alignment: Alignment.centerRight,
+                  height: 100,
+                  width: 100,
+                  margin: EdgeInsets.only(top: 30.0),                              
                 ),
                ],)
            ],
