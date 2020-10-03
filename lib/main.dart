@@ -32,7 +32,8 @@ class MyApp extends StatelessWidget {
                   margin: EdgeInsets.only(left: 20.0, right: 20.0),
                   ),
                   
-                  Container(                                                         
+                                                                        
+                    Container(                                                       
                     child: Text('Container 2'),                    
 	                decoration: BoxDecoration(		                
 		                color: Colors.white,
@@ -40,9 +41,10 @@ class MyApp extends StatelessWidget {
 	                alignment: Alignment.center,
                   height: 100,
                   width: 100,
-                  margin: EdgeInsets.only(left: 20.0, bottom: 50.0),
-                  transform: Matrix4.rotationZ(1),                                   
-                  )                   
+                  margin: EdgeInsets.only(left: 20.0, bottom: 150.0),
+                  transform: Matrix4.rotationZ(0.75),
+                    )                                  
+                                     
                    ],
                    overflow: Overflow.visible
                    ,)        
