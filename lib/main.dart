@@ -19,8 +19,12 @@ class MyApp extends StatelessWidget {
 	                child: Text('Container 1'),
 	                decoration: BoxDecoration(		                
 		                color: Colors.yellow,
+                    border: Border.all(
+                    color: Colors.black, //                   <--- border color
+                    width: 5.0,
+                    ),
                 	),
-	                alignment: Alignment.centerLeft,
+	                alignment: Alignment.center,
                   height: 100,
                   width: 100,
                   margin: EdgeInsets.only(left: 20.0, right: 20.0), 
@@ -31,7 +35,7 @@ class MyApp extends StatelessWidget {
 	                decoration: BoxDecoration(		                
 		                color: Colors.white,
                 	),
-	                alignment: Alignment.centerLeft,
+	                alignment: Alignment.center,
                   height: 100,
                   width: 100,
                   //transform: Matrix4.rotationZ(0.75),
@@ -42,26 +46,61 @@ class MyApp extends StatelessWidget {
              Column(
                children: [
                  Container(
+	                child: Text(''),
+	                decoration: BoxDecoration(		                
+		                color: Colors.yellow,
+                	),
+	                alignment: Alignment.bottomCenter,
+                  margin: EdgeInsets.only(top: 20.0),
+                  height: 100,
+                  width: 100,                                                 
+                ),                
+                 Container(
+	                child: Text(''),
+	                decoration: BoxDecoration(		                
+		                color: Colors.yellow,
+                	),
+	                alignment: Alignment.bottomCenter,
+                  height: 100,
+                  width: 100,                                                 
+                ),
+                 Container(
 	                child: Text('Container 3'),
 	                decoration: BoxDecoration(		                
 		                color: Colors.yellow,
                 	),
-	                alignment: Alignment.center,
+	                alignment: Alignment.bottomCenter,
                   height: 100,
                   width: 100,
-                  margin: EdgeInsets.only(top: 230.0), 
-                               
+                  margin: EdgeInsets.only(bottom: .0),                               
                 ),
                   Container(
+	                child: Text(''),
+	                decoration: BoxDecoration(		                
+		                color: Colors.blue,
+                	),
+	                alignment: Alignment.bottomRight, 
+                  height: 100,
+                  width: 100,                                          
+                ),
+                Container(
 	                child: Text('Container 4'),
 	                decoration: BoxDecoration(		                
 		                color: Colors.blue,
                 	),
-	                alignment: Alignment.center, 
+	                alignment: Alignment.centerRight, 
                   height: 100,
                   width: 100,                                          
                 ),
-                
+                Container(
+	                child: Text(''),
+	                decoration: BoxDecoration(		                
+		                color: Colors.blue,
+                	),
+	                alignment: Alignment.bottomRight, 
+                  height: 100,
+                  width: 100,                                          
+                ),
                ],),
              Column(
                children: [
@@ -70,8 +109,12 @@ class MyApp extends StatelessWidget {
 	                decoration: BoxDecoration(		                
 		                color: Colors.black,
                     shape: BoxShape.circle,
+                    border: Border.all(
+                    color: Colors.white, //                   <--- border color
+                    width: 5.0,
+                    ),
                 	),
-	                alignment: Alignment.centerRight, 
+	                alignment: Alignment.center, 
                   height: 100,
                   width: 100             
                 ),
@@ -80,7 +123,7 @@ class MyApp extends StatelessWidget {
 	                decoration: BoxDecoration(		                
 		                color: Colors.redAccent,
                 	),
-	                alignment: Alignment.centerRight,
+	                alignment: Alignment.topLeft,
                   height: 100,
                   width: 100,
                   margin: EdgeInsets.only(top: 30.0),                              
