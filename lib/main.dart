@@ -30,10 +30,11 @@ class MyApp extends StatelessWidget {
                   height: 100,
                   width: 100,
                   margin: EdgeInsets.only(left: 20.0, right: 20.0),
-                  ),
-                  
-                                                                        
-                    Container(                                                       
+                  ),                                  
+                  Positioned(
+                    top: 68.0, 
+                    left: 55.0,                                                                                 
+                    child: Container(                                                       
                     child: Text('Container 2'),                    
 	                decoration: BoxDecoration(		                
 		                color: Colors.white,
@@ -41,10 +42,10 @@ class MyApp extends StatelessWidget {
 	                alignment: Alignment.center,
                   height: 100,
                   width: 100,
-                  margin: EdgeInsets.only(left: 20.0, bottom: 150.0),
-                  transform: Matrix4.rotationZ(0.75),
+                  margin: EdgeInsets.only(left: 20.0, bottom: 50.0),
+                  transform: Matrix4.rotationZ(0.8),
                     )                                  
-                                     
+                  )            
                    ],
                    overflow: Overflow.visible
                    ,)        
@@ -58,9 +59,9 @@ class MyApp extends StatelessWidget {
 		                color: Colors.yellow,
                 	),
 	                alignment: Alignment.bottomCenter,
-                  margin: EdgeInsets.only(top: 9.0),
+                  margin: EdgeInsets.only(top: 9.0, left: 5.0),
                   height: 100,
-                  width: 100,                                                 
+                  width: 100,                                                                  
                 ),                
                  Container(
 	                child: Text(''),
@@ -68,6 +69,7 @@ class MyApp extends StatelessWidget {
 		                color: Colors.yellow,
                 	),
 	                alignment: Alignment.bottomCenter,
+                  margin: EdgeInsets.only(left: 5.0),
                   height: 100,
                   width: 100,                                                 
                 ),
@@ -79,7 +81,7 @@ class MyApp extends StatelessWidget {
 	                alignment: Alignment.bottomCenter,
                   height: 100,
                   width: 100,
-                  margin: EdgeInsets.only(bottom: 20.0),                               
+                  margin: EdgeInsets.only(bottom: 20.0, left: 5.0),                               
                 ),
                   Container(
 	                child: Text(''),
